@@ -8,3 +8,8 @@ alumno3 = {'Nombre': 'Luis Miguel','Edad':50,'Notas': [{'Asignatura':'Programaci
 alumno4 = {'Nombre': 'Chayanne','Edad':52,'Notas': [{'Asignatura':'Programacion','notas':[70,70]},{'Asignatura':'Fisica', 'notas':[70,70]}]};
 
 curso={'Carrera': 'Fisica','semestre':'2do semestre 2020', 'alumnos': [alumno1,alumno2,alumno3,alumno4]};
+
+print(f'Nombre:{curso["alumnos"][3]["Nombre"]}');
+
+for x in curso["alumnos"][3]["Notas"]:
+	print(f'Asignatura: {x["Asignatura"]}\nNotas: {x["notas"]}');
