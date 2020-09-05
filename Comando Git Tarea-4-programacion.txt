@@ -1,0 +1,225 @@
+﻿Comando utilizados
+git init
+
+
+echo #curso >> curso.py 
+
+
+echo #operaciones >> operaciones.py
+
+
+git add cursos.py operaciones.py
+
+
+git status 
+
+
+>> On branch master
+
+
+No commits yet
+
+
+Changes to be committed:
+                  (use "git rm --cached <file>..." to unstage)
+                                new file:   curso.py
+                                new file:   operaciones.py
+
+
+nano operaciones.py        
+
+
+git diff operaciones.py
+
+
+>>+a=3;b=5;c=4;d=3;
+  +af=2.5;bf=3.24;cf=6.32;df=1.54;
+  +#suma;
+  +suma=a+d;
+  +print(f'la suma entre a y d es\n>>{a}+{d} = {suma}\nambos son int,     el resultado es un int');
+  +#resta
+  +resta=bf-df;
+  +print(f'la resta entre bf y df es\n>>{bf}-{df} = {resta}\naf es un   float mientras b es un int, el resultado es un float');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git status 
+
+
+>>         On branch master
+
+
+No commits yet
+
+
+Changes to be committed:
+                  (use "git rm --cached <file>..." to unstage)
+                        new file:   cursos.py
+                        new file:   operaciones.py
+
+
+Changes not staged for commit:
+                  (use "git add <file>..." to update what will be committed)
+                  (use "git restore <file>..." to discard changes in working directory)
+                modified:   operaciones.py
+
+
+
+
+git add operaciones.py
+
+
+git commit -m "Cambio Registrado"
+
+
+git status
+
+
+>>  git status
+      On branch master
+nothing to commit, working tree clean
+
+
+nano opareciones.py
+
+
+git status
+
+
+>> On branch master
+   Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   operaciones.py
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+git add operaciones.py
+
+
+git commit -m “Otro cambio Registrado” operaciones.py
+
+
+git status
+
+
+>> On branch master
+   nothing to commit, working tree clean
+nano cursos.py
+
+
+git diff cursos.py
+
+
++alumno1 = {'Nombre': 'Miguel Bosse','Edad':64,'Notas': [{'Asignatura':'Programacion','notas':[17,23]},{'Asignatura':'Fisica', 'notas':[34,21]}]};
++
++alumno2 = {'Nombre': 'Juan Gabriel','Edad':66,'Notas': [{'Asignatura':'Programacion','notas':[70,45]},{'Asignatura':'Fisica', 'notas':[30,50]}]};
++
++alumno3 = {'Nombre': 'Luis Miguel','Edad':50,'Notas': [{'Asignatura':'Programacion','notas':[58,40]},{'Asignatura':'Fisica', 'notas':[46,65]}]};
++
++alumno4 = {'Nombre': 'Chayanne','Edad':52,'Notas': [{'Asignatura':'Programacion','notas':[70,70]},{'Asignatura':'Fisica', 'notas':[70,70]}]};
++
++curso={'Carrera': 'Fisica','semestre':'2do semestre 2020', 'alumnos': [alumno1,alumno2,alumno3,alumno4]};
+
+
+git status 
+
+
+>> On branch master
+   Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cursos.py
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+
+git add cursos.py
+
+
+git commit -m “Agregamos Cursos” cursos.py
+
+
+git status
+
+
+>> On branch master
+   nothing to commit, working tree clean
+
+
+nano cursos.py
+
+
+
+
+
+
+
+
+git diff cursos.py
+
+
+git status
+
+
+>>
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cursos.py
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+git add cursos.py
+
+
+git status.py
+
+
+git commit -m "Visualizamos el 4to estudiante y sus notas" cursos.py
+
+
+git status
+
+
+>>
+On branch master
+nothing to commit, working tree clean
+
+
+git add Comando\ Git\ Tarea-4-programacion.txt
+
+git remote add origin https://github.com/IDClabTec/Tarea-4-Programacion.git
+
+git push -u origin master
+
+###########################################################################################
